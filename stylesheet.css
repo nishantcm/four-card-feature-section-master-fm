@@ -123,3 +123,6 @@
     background-size: 40px 40px;
     background-repeat: no-repeat;
 }
+.card{
+    box-shadow: 2px 10px 2px 3px hsla(212, 100%, 88%, 0.3);
+}
