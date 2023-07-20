@@ -1,6 +1,12 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .page-wraper {
-    width: 375px;;
-    height: 100%;
+    width: 375px;
+    height: 1250px;
     margin: auto;
     background-color: hsl(0, 0%, 98%);
 }
@@ -34,7 +40,7 @@
 }
 .card1 {
     width: 300px;
-    height: 180px;
+    height: 190px;
     font-family: 'Poppins', sans-serif;
     margin: 80px auto 25px;
     background-color: hsl(0, 0%, 100%);
@@ -47,7 +53,7 @@
 }
 .card1 .icon svg {
     position: absolute;
-    top: 115px;
+    top: 120px;
     left: 225px;
     background-image: url(icon-supervisor.svg);
     background-size: 40px 40px;
@@ -68,7 +74,7 @@
 }
 .card2 {
     width: 300px;
-    height: 180px;
+    height: 190px;
     font-family: 'Poppins', sans-serif;
     margin: 25px auto 25px;
     background-color: hsl(0, 0%, 100%);
@@ -79,7 +85,7 @@
 }
 .card2 .icon svg {
     position: absolute;
-    top: 115px;
+    top: 120px;
     left: 225px;
     background-image: url(icon-team-builder.svg);
     background-size: 40px 40px;
@@ -87,7 +93,7 @@
 }
 .card3 {
     width: 300px;
-    height: 180px;
+    height: 190px;
     font-family: 'Poppins', sans-serif;
     margin: 25px auto 25px;
     background-color: hsl(0, 0%, 100%);
@@ -98,7 +104,7 @@
 }
 .card3 .icon svg {
     position: absolute;
-    top: 115px;
+    top: 120px;
     left: 225px;
     background-image: url(icon-karma.svg);
     background-size: 40px 40px;
@@ -106,9 +112,9 @@
 }
 .card4 {
     width: 300px;
-    height: 180px;
+    height: 190px;
     font-family: 'Poppins', sans-serif;
-    margin: 25px auto 80px;
+    margin: 25px auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 5px;
     border-top: 5px solid;
@@ -117,12 +123,89 @@
 }
 .card4 .icon svg {
     position: absolute;
-    top: 115px;
+    top: 120px;
     left: 225px;
     background-image: url(icon-calculator.svg);
     background-size: 40px 40px;
     background-repeat: no-repeat;
 }
 .card{
-    box-shadow: 2px 10px 2px 3px hsla(212, 100%, 88%, 0.3);
+    box-shadow: 2px 10px 15px 5px hsla(212, 58%, 59%, 0.2);
+}
+
+@media (min-width: 1440px){
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-wraper{
+        width: 1440px;
+        height: 1000px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        width: 540px;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 80px;
+        margin: auto;
+        position: absolute;
+        top: 120px;
+    }
+    .head{
+        font-size: 35px;
+        font-weight: 200;
+        color: hsl(234, 12%, 34%);
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .header {
+        font-size: 35px;
+        font-weight: 600;
+        color: hsl(234, 12%, 34%);
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .para {
+        font-size: 15px;
+        font-weight: 200px;
+        color: hsl(229, 6%, 66%);
+        text-align: center;
+        margin: 0 10px 0 10px;
+        line-height: 20px;
+    }
+    .card1 {
+        width: 300px;
+        height: 190px;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5px;
+        border-top: 5px solid;
+        color: hsl(180, 62%, 55%);
+        position: absolute;
+        left: 240px;
+        top: 520px;
+        
+        /* box-shadow: 0 10px hsla(212, 93%, 84%,.3); */
+        
+    }
+    .card2 {
+        margin: 25px auto 20px;
+    }
+    .card3 {
+        position: absolute;
+        bottom: 150px;
+    }
+    .card4 {
+        position: absolute;
+        right: 240px;
+        bottom: 280px;
+        margin: 0;
+        height: 190px;
+    }
 }
